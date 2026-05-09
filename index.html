@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Mother's Day 💖 A Special Gift For You</title>
+  <title>Happy Mother's Day 🌿 A Special Gift For You</title>
   <meta name="description" content="A beautiful Mother's Day celebration game created with love, just for you Mom." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,17 +22,17 @@
     }
 
     :root {
-      --rose: #e8537a;
-      --rose-light: #f7a8c0;
-      --rose-dark: #c0395a;
-      --gold: #f0b943;
-      --gold-light: #fde68a;
-      --lavender: #c084fc;
-      --mint: #6ee7b7;
-      --cream: #fff5f7;
-      --warm-white: #fffbf2;
-      --text-dark: #2d1b2e;
-      --text-mid: #5a3d5c;
+      --rose: #2a9d8f;
+      --rose-light: #80cdc6;
+      --rose-dark: #1b7268;
+      --gold: #e9c46a;
+      --gold-light: #fdefc3;
+      --lavender: #76c893;
+      --mint: #a8dadc;
+      --cream: #f0faf9;
+      --warm-white: #f5fffe;
+      --text-dark: #0d2b29;
+      --text-mid: #2e6b64;
     }
 
     html {
@@ -67,15 +67,15 @@
       justify-content: center;
       z-index: 1;
       overflow: hidden;
-      background: linear-gradient(135deg, #2d1b2e 0%, #5a1a4a 30%, #8b2252 60%, #c0395a 100%);
+      background: linear-gradient(135deg, #0d2b29 0%, #0e4a42 30%, #1b7268 60%, #2a9d8f 100%);
     }
 
     #hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(240, 185, 67, 0.25) 0%, transparent 60%),
-        radial-gradient(ellipse at 100% 100%, rgba(192, 132, 252, 0.2) 0%, transparent 50%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(233, 196, 106, 0.25) 0%, transparent 60%),
+        radial-gradient(ellipse at 100% 100%, rgba(118, 200, 147, 0.2) 0%, transparent 50%);
     }
 
     .hero-glow {
@@ -88,7 +88,7 @@
     .hero-glow:nth-child(1) {
       width: 400px;
       height: 400px;
-      background: rgba(232, 83, 122, 0.35);
+      background: rgba(42, 157, 143, 0.35);
       top: -100px;
       left: -80px;
       animation-delay: 0s;
@@ -97,7 +97,7 @@
     .hero-glow:nth-child(2) {
       width: 350px;
       height: 350px;
-      background: rgba(240, 185, 67, 0.25);
+      background: rgba(233, 196, 106, 0.25);
       bottom: -80px;
       right: -60px;
       animation-delay: 1.5s;
@@ -106,7 +106,7 @@
     .hero-glow:nth-child(3) {
       width: 300px;
       height: 300px;
-      background: rgba(192, 132, 252, 0.2);
+      background: rgba(118, 200, 147, 0.2);
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -130,6 +130,37 @@
       z-index: 2;
       text-align: center;
       padding: 2rem;
+    }
+
+    /* ===================== MOM PHOTO ===================== */
+    .mom-photo-wrap {
+      margin: 0 auto 1.8rem;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid var(--gold);
+      box-shadow: 0 0 0 6px rgba(233, 196, 106, 0.2), 0 8px 30px rgba(0,0,0,0.3);
+      overflow: hidden;
+      animation: fade-down 0.8s ease both;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*
+    ===================================================
+    HOW TO ADD MOM'S PHOTO:
+    Replace the placeholder below with an <img> tag:
+    <img src="YOUR_PHOTO_FILENAME.jpg" alt="Mom" style="width:100%;height:100%;object-fit:cover;" />
+
+    Example: If you put mom.jpg in the same folder as this file:
+    <img src="mom.jpg" alt="Mom" style="width:100%;height:100%;object-fit:cover;" />
+    ===================================================
+    */
+    .mom-photo-placeholder {
+      font-size: 4rem;
+      opacity: 0.7;
     }
 
     .badge {
@@ -205,7 +236,7 @@
     .btn-primary {
       display: inline-block;
       padding: 1rem 2.5rem;
-      background: linear-gradient(135deg, var(--gold), #f97316);
+      background: linear-gradient(135deg, var(--gold), #f4a261);
       color: var(--text-dark);
       font-weight: 700;
       font-size: 1.05rem;
@@ -213,14 +244,14 @@
       border-radius: 50px;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 6px 30px rgba(240, 185, 67, 0.4);
+      box-shadow: 0 6px 30px rgba(233, 196, 106, 0.4);
       transition: transform 0.2s, box-shadow 0.2s;
       animation: fade-up 0.9s 0.8s ease both;
     }
 
     .btn-primary:hover {
       transform: translateY(-3px) scale(1.04);
-      box-shadow: 0 12px 40px rgba(240, 185, 67, 0.55);
+      box-shadow: 0 12px 40px rgba(233, 196, 106, 0.55);
     }
 
     .scroll-arrow {
@@ -339,8 +370,8 @@
       border-radius: 20px;
       padding: 2rem 1.5rem;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(232, 83, 122, 0.1);
-      border: 1px solid rgba(232, 83, 122, 0.1);
+      box-shadow: 0 4px 20px rgba(42, 157, 143, 0.1);
+      border: 1px solid rgba(42, 157, 143, 0.1);
       transition: transform 0.3s, box-shadow 0.3s;
       position: relative;
       overflow: hidden;
@@ -358,7 +389,7 @@
 
     .tribute-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 12px 40px rgba(232, 83, 122, 0.2);
+      box-shadow: 0 12px 40px rgba(42, 157, 143, 0.2);
     }
 
     .tribute-icon {
@@ -382,7 +413,7 @@
 
     /* ===================== THE GAME SECTION ===================== */
     #game-section {
-      background: linear-gradient(180deg, #fce4ec 0%, #f8bbd9 50%, #fce4ec 100%);
+      background: linear-gradient(180deg, #d4f0ed 0%, #a8dadc 50%, #d4f0ed 100%);
     }
 
     #game-container {
@@ -390,7 +421,7 @@
       backdrop-filter: blur(15px);
       border-radius: 30px;
       padding: 2.5rem;
-      box-shadow: 0 8px 50px rgba(232, 83, 122, 0.2);
+      box-shadow: 0 8px 50px rgba(42, 157, 143, 0.2);
       border: 1px solid rgba(255, 255, 255, 0.8);
     }
 
@@ -401,7 +432,7 @@
       flex-wrap: wrap;
       gap: 1rem;
       padding-bottom: 1.5rem;
-      border-bottom: 1px solid rgba(232, 83, 122, 0.2);
+      border-bottom: 1px solid rgba(42, 157, 143, 0.2);
       margin-bottom: 2rem;
     }
 
@@ -447,11 +478,11 @@
     }
 
     .stat-box.gold-box {
-      background: linear-gradient(135deg, var(--gold), #f97316);
+      background: linear-gradient(135deg, var(--gold), #f4a261);
     }
 
     .stat-box.purple-box {
-      background: linear-gradient(135deg, var(--lavender), #9333ea);
+      background: linear-gradient(135deg, var(--lavender), #2d9e6b);
     }
 
     /* LEVEL & PROGRESS */
@@ -469,7 +500,7 @@
     }
 
     .level-bar-bg {
-      background: rgba(232, 83, 122, 0.15);
+      background: rgba(42, 157, 143, 0.15);
       border-radius: 50px;
       height: 10px;
       overflow: hidden;
@@ -494,7 +525,7 @@
       flex: 1 1 auto;
       padding: 0.7rem 1.2rem;
       border-radius: 12px;
-      border: 2px solid rgba(232, 83, 122, 0.25);
+      border: 2px solid rgba(42, 157, 143, 0.25);
       background: white;
       cursor: pointer;
       font-size: 0.9rem;
@@ -507,7 +538,7 @@
       background: linear-gradient(135deg, var(--rose), var(--rose-dark));
       color: white;
       border-color: transparent;
-      box-shadow: 0 4px 15px rgba(232, 83, 122, 0.35);
+      box-shadow: 0 4px 15px rgba(42, 157, 143, 0.35);
     }
 
     .tab-btn:hover:not(.active) {
@@ -567,7 +598,7 @@
 
     .mem-card-back {
       background: linear-gradient(135deg, var(--rose), var(--rose-dark));
-      box-shadow: 0 3px 12px rgba(192, 57, 90, 0.3);
+      box-shadow: 0 3px 12px rgba(27, 114, 104, 0.3);
       font-size: 1.8rem;
     }
 
@@ -580,7 +611,7 @@
     }
 
     .mem-card.matched .mem-card-front {
-      background: linear-gradient(135deg, #fff5f7, #fce4ec);
+      background: linear-gradient(135deg, #f0faf9, #d4f0ed);
       border-color: var(--gold);
       animation: card-pop 0.3s ease;
     }
@@ -666,7 +697,7 @@
 
     .letter-box.filled {
       border-color: var(--gold);
-      background: rgba(240, 185, 67, 0.1);
+      background: rgba(233, 196, 106, 0.1);
       border-bottom-style: solid;
       border-radius: 4px;
     }
@@ -729,7 +760,7 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: rgba(232, 83, 122, 0.2);
+      background: rgba(42, 157, 143, 0.2);
       transition: background 0.3s;
     }
 
@@ -753,7 +784,7 @@
       border-radius: 30px;
       padding: 3.5rem 3rem;
       text-align: center;
-      box-shadow: 0 8px 50px rgba(232, 83, 122, 0.15);
+      box-shadow: 0 8px 50px rgba(42, 157, 143, 0.15);
       position: relative;
       overflow: hidden;
     }
@@ -822,7 +853,7 @@
 
     /* ===================== GIFT BOX SECTION ===================== */
     #gift-section {
-      background: linear-gradient(135deg, #2d1b2e, #5a1a4a, #8b2252);
+      background: linear-gradient(135deg, #0d2b29, #0e4a42, #1b7268);
       color: white;
     }
 
@@ -864,7 +895,7 @@
 
     .gift-box:hover {
       transform: translateY(-8px) scale(1.05);
-      box-shadow: 0 14px 40px rgba(240, 185, 67, 0.3);
+      box-shadow: 0 14px 40px rgba(233, 196, 106, 0.3);
       border-color: var(--gold);
     }
 
@@ -890,7 +921,7 @@
 
     .gift-box.opened {
       border-color: var(--gold);
-      background: rgba(240, 185, 67, 0.15);
+      background: rgba(233, 196, 106, 0.15);
       animation: shake 0.4s ease;
     }
 
@@ -1020,7 +1051,7 @@
     #win-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(45, 27, 46, 0.92);
+      background: rgba(13, 43, 41, 0.92);
       z-index: 10002;
       display: none;
       flex-direction: column;
@@ -1140,16 +1171,28 @@
     <div class="hero-glow"></div>
 
     <div class="hero-content">
-      <div class="badge">💐 Happy Mother's Day 💐</div>
+
+      <!-- ===================================================
+           MOM'S PHOTO — ADD YOUR PHOTO HERE!
+           Replace the placeholder emoji below with:
+           <img src="mom.jpg" alt="Mom" style="width:100%;height:100%;object-fit:cover;" />
+           (Make sure mom.jpg is in the same folder as this HTML file)
+           =================================================== -->
+      <div class="mom-photo-wrap">
+        <span class="mom-photo-placeholder">🌿</span>
+        <!-- REPLACE THE LINE ABOVE WITH YOUR MOM'S PHOTO TAG -->
+      </div>
+
+      <div class="badge">🌿 Happy Mother's Day 🌿</div>
       <h1 class="hero-title">
-        To The Most <span>Beautiful</span><br />Woman In The World
+        To The Most <span>Wonderful</span><br />Soul In My World
       </h1>
-      <p class="hero-subtitle">A Little Game Made With All My Love ❤️</p>
+      <p class="hero-subtitle">A Little Surprise Made Just For You 🌱</p>
       <p class="hero-desc">
-        Mom, this is a small gift just for you — games, flowers, & words
-        that can never fully express how much you mean to me.
+        Mom, this is a tiny piece of my heart — games, flowers, & words
+        that can't quite capture how endlessly grateful I am for you.
       </p>
-      <a href="#game-section" class="btn-primary">Start Your Special Day 🌸</a>
+      <a href="#game-section" class="btn-primary">Begin Your Special Day 🌸</a>
     </div>
 
     <div class="scroll-arrow"><span>↓</span></div>
@@ -1158,51 +1201,50 @@
   <!-- ===================== TRIBUTE ===================== -->
   <section id="tribute">
     <div class="section-wrapper">
-      <p class="section-label reveal">Why You Are Amazing</p>
-      <h2 class="section-title reveal">Everything You Are, <em>Mom</em></h2>
-      <p class="section-sub reveal">There are no words grand enough, but here are a few truths we hold dear.</p>
+      <p class="section-label reveal">What Makes You Special</p>
+      <h2 class="section-title reveal">All The Ways You Shine, <em>Mom</em></h2>
+      <p class="section-sub reveal">There are no words grand enough — but here are a few truths we hold dear.</p>
 
       <div class="tribute-grid">
         <div class="tribute-card reveal">
           <span class="tribute-icon">💪</span>
-          <h3>Strongest Person</h3>
-          <p>You carry the weight of the world with a smile, turning every hardship into a stepping stone for us.</p>
+          <h3>Unbreakable Spirit</h3>
+          <p>You face every challenge with quiet strength, turning the hardest moments into lessons of resilience for us all.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">🌟</span>
-          <h3>Our Guiding Star</h3>
-          <p>In our darkest moments, your love shines bright and leads us safely home every single time.</p>
+          <h3>Our North Star</h3>
+          <p>Whenever we feel lost, your love is the light that finds us and brings us safely back to where we belong.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">🤗</span>
-          <h3>Warmest Embrace</h3>
-          <p>No hug in the world compares to yours. It makes every fear disappear and every joy multiply.</p>
+          <h3>Safest Arms</h3>
+          <p>Your embrace is the one place in the world where everything feels okay — every worry fades and every joy grows.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">🍳</span>
           <h3>Best Chef Ever</h3>
-          <p>Every meal you cook is filled with love and care. No restaurant can ever replicate the magic of your
-            kitchen.</p>
+          <p>Every meal you cook carries love in every bite. No restaurant on earth could ever recreate the warmth of your kitchen.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">📚</span>
           <h3>Our First Teacher</h3>
-          <p>You taught us to walk, to speak, to dream—and to be good human beings above all else.</p>
+          <p>You taught us to walk, to speak, to dream — and most importantly, to always choose kindness.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">👑</span>
           <h3>Our Queen</h3>
-          <p>You reign over our hearts with grace, patience, and a love so unconditional it defies all logic.</p>
+          <p>You rule our hearts with grace, patience, and a love so boundless it cannot be measured or repaid.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">🛡️</span>
           <h3>Our Safe Haven</h3>
-          <p>You provide a peace that we can't find anywhere else. With you, every storm feels a little less scary.</p>
+          <p>With you nearby, the world feels less overwhelming. You are our calm in every storm, our anchor in every wave.</p>
         </div>
         <div class="tribute-card reveal">
           <span class="tribute-icon">💖</span>
           <h3>Heart of Gold</h3>
-          <p>Your endless compassion and selfless nature inspire us every single day to be kinder, better people.</p>
+          <p>Your compassion and selfless love remind us every day of what it truly means to care for another person.</p>
         </div>
       </div>
     </div>
@@ -1291,23 +1333,18 @@
       <h2 class="section-title reveal">A Letter For <em>Mom</em></h2>
 
       <div class="letter-card reveal">
-        <span class="letter-heart">💖</span>
-        <h2>Dearest Mom,</h2>
+        <span class="letter-heart">🌿</span>
+        <h2>My Dearest Mom,</h2>
         <div class="letter-body">
-          <p>If I could give you one thing in life, I'd give you the ability to see yourself through my eyes — only then
-            would you realize how special you are to me.</p>
+          <p>If I could give you just one thing in life, I'd give you the ability to see yourself through my eyes — only then would you understand how truly extraordinary you are to me.</p>
           <br />
-          <p>You are the reason I believe in goodness. Your laughter is my favorite sound. Your voice is my safe place.
-            The way you love — quietly, fiercely, endlessly — has shaped everything I am and everything I hope to be.
-          </p>
+          <p>You are the reason I believe the world is good. Your laughter fills every room. Your presence is my peace. The way you love — quietly, fiercely, endlessly — has made me who I am today and who I aspire to be tomorrow.</p>
           <br />
-          <p>Thank you for the sleepless nights you spent watching over me. Thank you for the sacrifices you never even
-            mentioned. Thank you for turning the ordinary into the extraordinary, every single day.</p>
+          <p>Thank you for the countless nights you spent watching over me. Thank you for the sacrifices you made without a second thought. Thank you for making even the simplest moments feel like something worth remembering.</p>
           <br />
-          <p>No card, no gift, no words will ever be enough. But I hope this little corner of the internet reminds you —
-            today and always — that you are deeply, completely, unconditionally loved.</p>
+          <p>No card, no gift, no words will ever truly be enough. But I hope this small corner of the internet reminds you — today and always — that you are deeply, completely, unconditionally cherished.</p>
         </div>
-        <p class="letter-sig">With all my love, always ❤️</p>
+        <p class="letter-sig">With all my love, forever 💚</p>
       </div>
     </div>
   </section>
@@ -1325,8 +1362,7 @@
 
   <!-- ===================== FOOTER ===================== -->
   <footer>
-    <p>Made with <strong>infinite love by Tanmay</strong> 💖 for the most wonderful mother in the universe. Happy
-      Mother's Day! 🌸</p>
+    <p>Made with <strong>infinite love</strong> 💚 for the most wonderful mother in the universe. Happy Mother's Day! 🌿</p>
   </footer>
 
   <!-- ===================== OVERLAYS ===================== -->
@@ -1335,7 +1371,7 @@
     <span class="gift-msg-icon" id="gift-msg-icon"></span>
     <h3 id="gift-msg-title"></h3>
     <p id="gift-msg-text"></p>
-    <button onclick="closeGiftMsg()">Close 💖</button>
+    <button onclick="closeGiftMsg()">Close 💚</button>
   </div>
 
   <div id="toast"></div>
@@ -1389,7 +1425,7 @@
         this.sp = 0.1 + Math.random() * 0.4;
         this.op = Math.random();
         this.tw = 0.005 + Math.random() * 0.01;
-        this.hue = [350, 340, 30, 280][Math.floor(Math.random() * 4)];
+        this.hue = [170, 160, 45, 140][Math.floor(Math.random() * 4)];
       }
       update() {
         this.y -= this.sp;
@@ -1399,7 +1435,7 @@
       draw() {
         ctx.save();
         ctx.globalAlpha = Math.abs(Math.sin(this.op));
-        ctx.fillStyle = `hsl(${this.hue},80%,75%)`;
+        ctx.fillStyle = `hsl(${this.hue},70%,72%)`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
         ctx.fill();
@@ -1432,12 +1468,9 @@
 
     function addScore(pts, el) {
       score += pts; xp += pts; streak++;
-      // Streak bonus
       if (streak > 0 && streak % 5 === 0) { addScore(5, null); showToast(`🔥 ${streak} Streak BONUS! +5 ❤️`); }
-      // Level up
       while (xp >= XP_PER_LEVEL) { xp -= XP_PER_LEVEL; level++; showToast(`🌟 Level Up! You're now Level ${level}!`); }
       updateUI();
-      // Pop animation
       if (el) {
         const pop = document.createElement('div');
         pop.className = 'score-pop';
@@ -1507,7 +1540,7 @@
         const card = document.createElement('div');
         card.className = 'mem-card';
         card.innerHTML = `
-      <div class="mem-card-face mem-card-back">💖</div>
+      <div class="mem-card-face mem-card-back">💚</div>
       <div class="mem-card-face mem-card-front">${emoji}</div>`;
         card.onclick = () => flipCard(card, i, emoji);
         g.appendChild(card);
@@ -1551,7 +1584,7 @@
        GAME 3: WORD OF LOVE
     =================================================================== */
     const WORD_BANK = [
-      { word: 'MOTHER', clue: 'The person who gave you life and loves you unconditionally', cat: '💖 Family' },
+      { word: 'MOTHER', clue: 'The person who gave you life and loves you unconditionally', cat: '💚 Family' },
       { word: 'WARMTH', clue: 'The feeling of a mom\'s hug on a cold day', cat: '🌞 Feelings' },
       { word: 'FLOWER', clue: 'A beautiful gift for a beautiful person', cat: '🌸 Nature' },
       { word: 'TENDER', clue: 'Gentle care and loving patience', cat: '💝 Qualities' },
@@ -1607,7 +1640,6 @@
 
     function renderLetterChoices() {
       const el = document.getElementById('letter-choices'); el.innerHTML = '';
-      // Shuffled letters: correct letters + random extras
       const correct = [...new Set(currentWord.split(''))];
       const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
       const extras = shuffle(alpha.filter(c => !correct.includes(c))).slice(0, Math.max(0, 10 - correct.length));
@@ -1644,7 +1676,6 @@
 
     function nextWord() { loadWord(); }
 
-    // Auto-init word game when tab is clicked
     document.getElementById('tab-word').addEventListener('click', () => {
       if (!currentWord) initWords();
     });
@@ -1653,22 +1684,22 @@
        GIFT BOXES
     =================================================================== */
     const GIFTS = [
-      { icon: '🌹', title: 'A Garden of Roses', text: 'Imagine a garden filled with the most beautiful roses, all blooming just for you. This is how full of beauty my life is because you are in it.' },
-      { icon: '⭐', title: 'You Are My Star', text: 'When I look at the stars, I think of you. You light up the darkest corners of my world and guide me home every single time.' },
-      { icon: '🍰', title: 'Sweet Like You', text: 'Nothing in the world is as sweet as your love. Not cake, not candy, not anything. Thank you for being the sweetest part of my life.' },
-      { icon: '🎵', title: 'Our Song', text: '"You are the sunshine of my life" — every song written about love has secretly been written about you, Mom. You are my favorite melody.' },
-      { icon: '🌙', title: 'Every Sleepless Night', text: 'Every night you stayed up to watch over me, I was safe because of you. I hope you know that your sacrifices never went unnoticed.' },
-      { icon: '🦋', title: 'You Set Me Free', text: 'You raised me with wings strong enough to fly, and a heart brave enough to soar. Everything I am is because of everything you gave.' },
+      { icon: '🌿', title: 'A Garden Just For You', text: 'Imagine a lush garden blooming with everything beautiful, tended with the same care you have given to this family all your life. You deserve every flower in it.' },
+      { icon: '⭐', title: 'You Are My Star', text: 'When the night feels long, I look up and think of you. You are the light that has guided me through every dark moment, steady and unwavering.' },
+      { icon: '🍰', title: 'Sweet Like You', text: 'Nothing compares to the sweetness you bring into our lives. Not cake, not honey, nothing. Thank you for making every ordinary day feel like a celebration.' },
+      { icon: '🎵', title: 'Our Song', text: '"You are the sunshine of my life" — every song about love was quietly written with you in mind, Mom. You are my favorite melody, always playing in my heart.' },
+      { icon: '🌙', title: 'Every Sleepless Night', text: 'Every night you stayed awake so I could sleep peacefully, I was safe because of you. I carry those quiet sacrifices with me, every single day.' },
+      { icon: '🦋', title: 'You Set Me Free', text: 'You gave me wings strong enough to fly and a heart courageous enough to leap. Every dream I dare to chase exists because you believed in me first.' },
     ];
 
     const giftRow = document.getElementById('gifts-row');
     GIFTS.forEach((g, i) => {
       const box = document.createElement('div');
       box.className = 'gift-box';
-      box.innerHTML = `<span class="box-icon">${g.icon}</span><p>Open Me!</p>`;
+      box.innerHTML = `<span class="box-icon">${g.icon}</span><p>Tap Me!</p>`;
       box.onclick = function () {
         box.classList.add('opened');
-        box.querySelector('p').textContent = '💖';
+        box.querySelector('p').textContent = '💚';
         addScore(5, box);
         openGift(g);
         launchMiniConfetti(box);
@@ -1692,7 +1723,7 @@
     /* ===================================================================
        CONFETTI
     =================================================================== */
-    const CONFETTI_COLORS = ['#e8537a', '#f0b943', '#c084fc', '#6ee7b7', '#f97316', '#38bdf8'];
+    const CONFETTI_COLORS = ['#2a9d8f', '#e9c46a', '#76c893', '#a8dadc', '#f4a261', '#80cdc6'];
 
     function launchConfetti() {
       for (let i = 0; i < 80; i++) {
@@ -1742,11 +1773,8 @@
     /* ===================================================================
        INIT
     =================================================================== */
-    // Start memory game with default
     startMemory(4);
   </script>
 </body>
 
 </html>
-
-/* edgeonepages */
